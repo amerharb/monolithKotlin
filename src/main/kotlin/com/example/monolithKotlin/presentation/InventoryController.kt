@@ -8,9 +8,7 @@ import com.example.monolithKotlin.service.InventoryService
 
 @RequestMapping("/api/inventory-service")
 @RestController
-open class InventoryController
-@Autowired
-constructor(private val inventoryService: InventoryService) {
+class InventoryController(@Autowired private val inventoryService: InventoryService) {
 
     @PostMapping("/products")
     fun addProduct(@RequestBody product: Product) {

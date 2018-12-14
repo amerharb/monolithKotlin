@@ -9,4 +9,3 @@ class MonolithKotlinApplication
 fun main(args: Array<String>) {
 	runApplication<MonolithKotlinApplication>(*args)
 }
-
